@@ -1,15 +1,14 @@
 import './App.css'
-import ItemListContainer from './componentes/ItemListContainer/ItemListContainer.jsx'
-import NavBar from './componentes/NavBar/NavBar.jsx'
 import { ChakraProvider } from '@chakra-ui/react'
+import NavBar from './componentes/NavBar/NavBar'
+import ItemListContainer from './componentes/ItemListContainer/ItemListContainer'
+
 function App() {
 
   return (
     <ChakraProvider>
-    <>
       <NavBar />
-      <ItemListContainer title='Sports Cars Scale Models'/>
-    </>
+      <ItemListContainer title='Sports Cars Scale Models' />
     </ChakraProvider>
   )
 }
